@@ -7,21 +7,23 @@ app.init = function() {
 };
 
 app.addItem = function() {
-    var text = $("#addToList").val();
-    $("#todoList").append('<li><input class="done" type="checkbox">' + text + ' ' + '<button class="delete">Delete</button></li>');
-    $("#addToList").val("");
+    if ($("#addToList").val() !== "") {
+        var text = $("#addToList").val();
+        $("#todoList").append('<li class="list-group-item">' + text + ' ' + '<button class="btn btn-danger delete pull-right">Delete</button></li>');
+        $("#addToList").val("");
+    }
 };
 
 app.deleteItem = function() {
-  $(this).parent().remove();
+    $(this).parent().remove();
 };
 
 app.finishItem = function() {
-  if ($(this).parent().css('text-decoration') === 'line-through') {
-    $(this).parent().css('text-decoration', 'none');
-  } else {
-  $(this).parent().css("text-decoration", "line-through");
-  }
+    if ($(this).parent().css('text-decoration') === 'line-through') {
+        $(this).parent().css('text-decoration', 'none');
+    } else {
+        $(this).parent().css("text-decoration", "line-through");
+    }
 };
 
 app.init();

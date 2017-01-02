@@ -1,0 +1,35 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: grey;
+    width: 100%;
+    height: auto;
+}
+
+.jumbotron {
+    margin: 40px;
+}
+
+.jumbotron h1 {
+    font-size: 3em;
+}
+
+ul li {
+    font-size: 1.2em;
+    list-style-type: none;
+    padding: 10px;
+}
+
+.input-group {
+    margin-top: 30%;
+}
+
+.delete {
+    position: relative;
+    left: 15px;
+    bottom: 10px;
+    padding: 11px;
+}
