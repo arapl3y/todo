@@ -16,7 +16,7 @@ app.addItem = function() {
 
 app.deleteItem = function() {
     $(this).parent().fadeOut(function() {
-      $(this).remove();
+        $(this).remove();
     });
 };
 
