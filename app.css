@@ -11,16 +11,24 @@ body {
 
 .jumbotron {
     margin: 40px;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+}
+
+.jumbotron .well {
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 }
 
 .jumbotron h1 {
     font-size: 3em;
 }
 
-ul li {
-    font-size: 1.2em;
-    list-style-type: none;
-    padding: 10px;
+.list-group-item {
+  font-size: 1.2em;
+  padding-right: 20%;
 }
 
 .input-group {
@@ -28,8 +36,22 @@ ul li {
 }
 
 .delete {
-    position: relative;
-    left: 15px;
-    bottom: 10px;
-    padding: 11px;
+    position: absolute;
+    top: 0;
+    right :0;
+    padding: 8px;
+    height: 100%;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 660px) {
+  .jumbotron {
+    margin: 20px;
+  }
+
+  .list-group-item {
+    padding-right: 30%;
+  }
 }
