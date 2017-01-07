@@ -54,9 +54,30 @@ body {
 
 @media (max-width: 660px) {
     .jumbotron {
-        margin: 20px;
+        margin: 30px 20px;
+    }
+    .jumbotron h1 {
+      font-size: 2.6em;
+    }
+    .jumbotron h5 {
+      font-size: 0.8em;
     }
     .list-group-item {
         padding-right: 30%;
     }
+}
+
+@media (max-width: 320px) {
+  .jumbotron h1 {
+    font-size: 2em;
+  }
+  .jumbotron h5 {
+    font-size: 0.6em;
+  }
+  .list-group-item {
+    font-size: 0.8em;
+  }
+  .delete {
+    font-size: 0.8em;
+  }
 }
