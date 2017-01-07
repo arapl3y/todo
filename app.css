@@ -3,32 +3,38 @@ html {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background: grey;
+    font-family: 'Lato', sans-serif;
+    background: #56ab2f;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #56ab2f, #a8e063);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #56ab2f, #a8e063);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     width: 100%;
     height: auto;
 }
 
 .jumbotron {
     margin: 40px;
-    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
-    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
-    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
 }
 
 .jumbotron .well {
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
 .jumbotron h1 {
     font-size: 3em;
+    margin: 0;
 }
 
 .list-group-item {
-  font-size: 1.2em;
-  padding-right: 20%;
+    font-size: 1.2em;
+    padding-right: 20%;
 }
 
 .input-group {
@@ -38,7 +44,7 @@ body {
 .delete {
     position: absolute;
     top: 0;
-    right :0;
+    right: 0;
     padding: 8px;
     height: 100%;
 }
@@ -47,11 +53,10 @@ body {
 /* Media Queries */
 
 @media (max-width: 660px) {
-  .jumbotron {
-    margin: 20px;
-  }
-
-  .list-group-item {
-    padding-right: 30%;
-  }
+    .jumbotron {
+        margin: 20px;
+    }
+    .list-group-item {
+        padding-right: 30%;
+    }
 }
