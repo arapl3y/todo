@@ -5,11 +5,8 @@ html {
 body {
     font-family: 'Lato', sans-serif;
     background: #56ab2f;
-    /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #56ab2f, #a8e063);
-    /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #56ab2f, #a8e063);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     width: 100%;
     height: auto;
 }
@@ -52,9 +49,9 @@ body {
 
 /* Media Queries */
 
-@media (max-width: 660px) {
+@media (max-width: 600px) {
     .jumbotron {
-        margin: 30px 20px;
+      margin: 30px 20px;
     }
     .jumbotron h1 {
       font-size: 2.6em;
@@ -63,11 +60,11 @@ body {
       font-size: 0.8em;
     }
     .list-group-item {
-        padding-right: 30%;
+      padding-right: 30%;
     }
 }
 
-@media (max-width: 320px) {
+/*@media (max-width: 320px) {
   .jumbotron h1 {
     font-size: 2em;
   }
@@ -80,4 +77,4 @@ body {
   .delete {
     font-size: 0.8em;
   }
-}
+}*/
