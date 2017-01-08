@@ -4,9 +4,9 @@ html {
 
 body {
     font-family: 'Lato', sans-serif;
-    background: #56ab2f;
-    background: -webkit-linear-gradient(to left, #56ab2f, #a8e063);
-    background: linear-gradient(to left, #56ab2f, #a8e063);
+    background: #E8CBC0;
+    background: -webkit-linear-gradient(to left, #E8CBC0, #636FA4);
+    background: linear-gradient(to left, #E8CBC0, #636FA4);
     width: 100%;
     height: auto;
 }
@@ -31,19 +31,35 @@ body {
 
 .list-group-item {
     font-size: 1.2em;
-    padding-right: 20%;
+    padding-right: 30%;
+    margin-top: 5px;
+    border-radius: 4px;
 }
 
 .input-group {
     margin-top: 30%;
 }
 
-.delete {
+.done {
     position: absolute;
     top: 0;
     right: 0;
-    padding: 8px;
-    height: 100%;
+    padding: 1px;
+    height: 50%;
+    width: 20%;
+    border-radius: 0;
+    border-top-right-radius: 4px;
+}
+
+.delete {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 1px;
+    height: 50%;
+    width: 20%;
+    border-radius: 0;
+    border-bottom-right-radius: 4px;
 }
 
 
@@ -51,18 +67,16 @@ body {
 
 @media (max-width: 600px) {
     .jumbotron {
-      margin: 30px 20px;
+        margin: 30px 20px;
     }
     .jumbotron h1 {
-      font-size: 2.6em;
+        font-size: 2.6em;
     }
     .jumbotron h5 {
-      font-size: 0.8em;
-    }
-    .list-group-item {
-      padding-right: 30%;
+        font-size: 0.8em;
     }
 }
+
 
 /*@media (max-width: 320px) {
   .jumbotron h1 {
