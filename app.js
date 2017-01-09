@@ -71,7 +71,7 @@ app.doneItem = function() {
 // deleteItem function used to delete items from the to do list
 app.deleteItem = function() {
     // Assign the to do list elements to a variable
-    var li = $(this);
+    var li = $(this).parent();
     // ???
     var i = li.data('index');
     // Delete to do list item according to index
