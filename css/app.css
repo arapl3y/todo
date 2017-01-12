@@ -9,16 +9,19 @@ body {
     background: linear-gradient(to left, #E8CBC0, #636FA4);
     width: 100%;
     height: auto;
+		padding: 0;
 }
 
 .jumbotron {
     margin: 40px;
+		background: rgba(255, 255, 255, 0.6);
     -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
 }
 
 .jumbotron .well {
+		background: rgba(255, 255, 255, 0.4) !important;
     -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
