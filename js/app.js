@@ -39,10 +39,10 @@ app.init = function() {
 // addItem function used to add text value within input to to do list
 app.addItem = function() {
 
-	// Assign text value of input to a variable
+  // Assign text value of input to a variable
   var text = $("#addToList").val();
 
-	// If the text input is empty end the function
+  // If the text input is empty end the function
   if (text === "") {
     return;
   }
@@ -59,7 +59,7 @@ app.addItem = function() {
   // Invoke the render function
   app.render();
 
-	// Empty the text input
+  // Empty the text input
   $("#addToList").val("");
 };
 
@@ -70,16 +70,16 @@ app.doneItem = function() {
   // Change background color and opacity
   var li = $(this).parent();
 
-	// Give each todo li element a variable as a way to access the data
+  // Give each todo li element a variable as a way to access the data
   var todo = li.data('todo');
 
- 	if (todo.isDone) {
-		todo.isDone = false;
-	} else {
-		todo.isDone = true;
-	}
+  if (todo.isDone) {
+    todo.isDone = false;
+  } else {
+    todo.isDone = true;
+  }
 
-	// Invoke the render function
+  // Invoke the render function
   app.render();
 };
 
