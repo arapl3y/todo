@@ -3,13 +3,15 @@ html {
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Inconsolata', sans-serif;
     background: #E8CBC0;
-    background: -webkit-linear-gradient(to left, #E8CBC0, #636FA4);
-    background: linear-gradient(to left, #E8CBC0, #636FA4);
     width: 100%;
     height: auto;
 		padding: 0;
+}
+
+.container {
+	padding-bottom: 200px;
 }
 
 .jumbotron {
@@ -32,10 +34,14 @@ body {
     margin: 0;
 }
 
+.lists {
+	margin-top: 40px;
+}
+
 .list-group-item {
     font-size: 1.2em;
     padding-right: 30%;
-    margin-top: 5px;
+    margin-top: 1px;
     border-radius: 4px;
 }
 
@@ -52,6 +58,13 @@ body {
     width: 20%;
     border-radius: 0;
     border-top-right-radius: 4px;
+		background-color: #69c773;
+		border-color: #69c773;
+}
+
+.done:hover {
+	background-color: #389e43;
+	border-color: #389e43;
 }
 
 .delete {
@@ -63,6 +76,42 @@ body {
     width: 20%;
     border-radius: 0;
     border-bottom-right-radius: 4px;
+		background-color: #f96767;
+		border-color: #f96767;
+}
+
+.delete:hover {
+	background-color: #d64040;
+	border-color: #d64040;
+}
+
+.add {
+	background-color: #3656dd;
+	border-color: #3656dd;
+}
+
+.add:hover {
+	background-color: #1a3ccc;
+	border-color: #1a3ccc;
+}
+
+.footer {
+	text-align: center;
+	position: relative;
+	height: 150px;
+	margin-top: -150px;
+	clear: both;
+	padding-top: 20px;
+}
+
+.footer i {
+	font-size: 3em;
+	color: #c49380;
+	transition: 0.2s ease-in-out;
+}
+
+.footer i:hover {
+	opacity: 0.8;
 }
 
 /* Media Queries */
